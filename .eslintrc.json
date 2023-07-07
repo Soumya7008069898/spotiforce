@@ -1,14 +1,8 @@
 {
-  "extends": ["@salesforce/eslint-config-lwc/recommended"],
-  "overrides": [
-    {
-      "files": ["*.test.js"],
-      "rules": {
-        "@lwc/lwc/no-unexpected-wire-adapter-usages": "off"
-      },
-      "env": {
-        "node": true
-      }
-    }
-  ]
+  "plugins": ["@salesforce/eslint-plugin-aura"],
+  "extends": ["plugin:@salesforce/eslint-plugin-aura/recommended"],
+  "rules": {
+    "vars-on-top": "off",
+    "no-unused-expressions": "off"
+  }
 }
