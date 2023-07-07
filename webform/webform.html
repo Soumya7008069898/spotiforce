@@ -1,0 +1,36 @@
+<!--<template>
+    <lightning-card title="Webform">
+        <lightning-input type="text" label="Case Subject"></lightning-input>
+        <lightning-input type="text" label="Case Description"></lightning-input>       
+        <lightning-input type="picklist" label="Origin"></lightning-input>
+        <lightning-input type="text" label="Type of problem"></lightning-input>
+        <lightning-input type="text" label="Related with"></lightning-input>
+        <lightning-input type="text" label="Comments"></lightning-input>
+        <lightning-input type="text" label="Contact Email"></lightning-input>
+        <lightning-input type="text" label="Address"></lightning-input>
+        <p class ="slds -p-around-small" style="min-width: 25rem;">
+        <lightning-button 
+        label="create new contact"
+        onclick={handlecontactbutton}>
+    </lightning-button>-->
+    <!--<lightning-button 
+        label="submit"
+        onclick={handlesubmitbutton}>
+    </lightning-button>
+    <lightning-button 
+        label="Go to Welcome"
+        onclick={handleGotobutton}>
+    </lightning-button>
+        </p>
+    </lightning-card>  
+</template>-->
+<template>
+ <lightning-card title="Web-form">
+<lightning-record-form
+ object-api-name={objectApiName}
+ fields={fields}
+  onsuccess={handleSuccess}>
+</lightning-record-form>
+</lightning-card>
+ </template>
+

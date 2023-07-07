@@ -1,0 +1,34 @@
+<template>
+    <lightning-card title ="User Profile">
+        <div>
+        <lightning-input type="text"
+	onchange={searchKeyword}
+	variant="label-hidden"
+	class="slds-var-m-bottom_small"
+	label="SONG Name"
+	placeholder="Search for songs"
+	value={searchValue}>
+</lightning-input>
+</div>
+<div>
+    <ligtning-button label="search"
+    onclick={handleSearchKeyword}
+    variant="brand">
+</ligtning-button>
+</div>
+        <p class ="slds -p-around-small" style="min-width: 25rem;"> 
+            <lightning-button
+            label = "Subscribe"
+            onclick= {handlesubscribeButton}>
+   </lightning-button>
+   <lightning-button
+            label = "Complain"
+            onclick= {handleComplainButton}>
+   </lightning-button>
+   <lightning-button
+            label = "Exit"
+            onclick= {handleExitButton}>
+   </lightning-button>
+   </p>
+ </lightning-card>   
+</template>
